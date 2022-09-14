@@ -64,3 +64,5 @@ int main()
 }
 
 // STRING BASED CODE
+
+//h.w - try to do this question by bit manipulation
