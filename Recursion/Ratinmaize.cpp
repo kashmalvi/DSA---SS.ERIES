@@ -102,12 +102,14 @@ int main()
 {
     system("cls");
     vector<vector<int>> m = {{1, 0, 0, 0}, {1, 1, 0, 1}, {1, 1, 0, 0}, {0, 1, 1, 1}};
+    // vector<vector<int>> m = {{1,0},{1,1}};   //another test case
 
-    for (auto i : searchMaze(m, 4))
+    for (auto i : searchMaze(m, 4)) //2 is square size of vector m
         cout << i << " ";
 
     return 0;
     getch();
 }
 
-// OUTPUT - DDRDRR DRDDRR
+// OUTPUT - 1 - DDRDRR DRDDRR
+//          2 - DR
