@@ -104,7 +104,7 @@ int main()
     vector<vector<int>> m = {{1, 0, 0, 0}, {1, 1, 0, 1}, {1, 1, 0, 0}, {0, 1, 1, 1}};
     // vector<vector<int>> m = {{1,0},{1,1}};   //another test case
 
-    for (auto i : searchMaze(m, 4)) //2 is square size of vector m
+    for (auto i : searchMaze(m, 4)) //4 is square size of vector m
         cout << i << " ";
 
     return 0;
