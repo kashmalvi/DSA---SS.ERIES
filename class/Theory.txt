@@ -1,0 +1,44 @@
+class - it is user defined data type /  custom data type
+object - instance of class
+
+-size of class is the total size of all data types declared inside the class (try with coding for crystal clear ), also 
+        go for padding and greedy
+-accessing properties / data member using dot(.) operator
+-3 access modifiers -public -private -protected
+
+-static allocation of object = class_name object_name ;
+
+-dynamic allocation of object = class_name *object_name = new class_name();
+-to delete heap memory = delete object_name;
+
+-use this keyword to access the data member of class , if the name of data member and input parameter name are same
+    ex -        int health;
+                void getdata(int health)
+                {
+                    this->health = health; //here this is a pointer for object created for class
+                }
+
+- once define constructor / copy constructor , the default constructor / copy constructor will die.
+
+-default copy constructor used the concept of shallow copy -  using same memory to update for line 25       
+                         h1.name = "malvi"; //in this case only value of this object will change
+                         h1.name[0] = 'g'; //in this case want to change only single char of name, hence value of both object  changed 
+    to avoid this case there is a concept of deep copy where only those changes want to make channge, is possible
+
+deep copy`
+
+        char *ch = new char[strlen(temp.name)+1];
+            strcpy(ch , temp.name);
+            this->name = ch;
+    -jab jab cpy karenge tab tab new array banega or uska address class ke data (name) me strore hoga 
+
+-Destructor called automatically for static object, but for dynamic object Destructor will called manually with 'delete' keyword preceding object_name
+
+-Static member, if used in data member or is a type of member which belongs to class and do not require the object to access int
+        it is done with the following syntax 
+                -data_type class_name :: data_member_name = (_value_); //only work outside the main
+        -below syntax to access static member   
+                -cout<<"\n "<<   Hero::timetocomplete  <<endl;
+        -this keyword nahi hota hai iinke pass   
+        -static member function can only access to static type of data member
+                - class_name :: static_member_function();
